@@ -32,7 +32,7 @@
         "whitelist": [
             {
                 "endpoint": "kube",
-                "collector-types": [ "master", "worker" ]
+                "collector-types": [ "profiler" ]
             }
         ],
         "start": "forkstat-start",
