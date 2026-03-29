@@ -35,6 +35,8 @@ done
 
 /bin/rm -f forkstat-pids.txt
 
+# Record the UTC date for post-processing (forkstat only outputs HH:MM:SS)
+date -u +%Y-%m-%d > forkstat-date.txt
 
 cmd_path=$( command -v forkstat )
 cmd="$cmd_path -e ${events} -X -S"
