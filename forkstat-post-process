@@ -56,7 +56,7 @@ def main():
     current_ts = None
     counts = {}
 
-    with lzma.open(data_file, 'rt') as fh:
+    with lzma.open(data_file, 'rt', errors='replace') as fh:
         for line in fh:
             match = event_pattern.match(line)
             if not match:
